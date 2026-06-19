@@ -1,0 +1,57 @@
+# Data Cleaning & Validation Documentation
+
+## Column Removal
+
+1. Removed review_title and review_message from the reviews dataset as they were not required for the scope of structured quantitative analysis.
+
+---
+
+## Missing Value Assessment
+
+2. Investigated null and blank values within the orders dataset. Most missing delivery-related dates were associated with cancelled, unavailable, invoiced, or processing orders and were retained as valid business-process outcomes rather than data-quality issues.
+
+3. Investigated missing values within the products dataset, including product category information and descriptive attributes.
+
+4. Identified 609 products (1.85% of records) with missing category information. Missing values were standardized as 'unknown' to preserve records and support category-level analysis.
+
+5. Verified rows with zero freight value in the order_items dataset. These records were retained and treated as free-shipping transactions.
+
+6. Verified rows with zero payment value in the payments dataset. These records were primarily associated with voucher-based transactions and were retained.
+
+---
+
+## Standardization & Data Formatting
+
+7. Standardized selected customer, geolocation, and order-item fields to improve consistency across datasets.
+
+8. Converted review timestamp fields into a standardized datetime format through the creation of validated date columns.
+
+9. Converted order-related date columns into consistent datetime formats and validated successful conversion across all applicable records.
+
+10. Reviewed city names within customer and geolocation datasets. Basic standardization was applied to case and spacing inconsistencies. Advanced geographic normalization was not performed.
+
+---
+
+## Product Data Validation
+
+11. Identified one product record containing only a product_id and no descriptive attributes. The record was retained to preserve referential integrity with associated transactions.
+
+12. Category reconciliation identified two valid product categories that existed in the products dataset but were absent from the translation table. These records were retained and documented as translation-mapping exceptions.
+
+13. Investigated product dimension and weight anomalies. A small number of products contained zero-valued measurements and were retained due to insufficient evidence of data-entry errors.
+
+---
+
+## Duplicate Validation
+
+14. Performed duplicate validation across major datasets using business-key checks. No significant duplicate records requiring remediation were identified.
+
+---
+
+## Date Sequence Validation
+
+15. Identified 166 records where carrier delivery timestamps preceded purchase timestamps. Most discrepancies were limited to a few hours and were retained as minor timestamp inconsistencies.
+
+16. Identified 1,359 records where carrier handoff timestamps preceded order approval timestamps. Most discrepancies were limited to one day and were retained as operational timing differences.
+
+17. Identified 23 delivered orders where carrier delivery timestamps occurred after customer delivery timestamps. Due to the extremely small proportion of affected records and inability to determine correct values, the records were retained and documented as anomalies.

@@ -1,0 +1,190 @@
+# Feature Engineering Documentation
+
+Custom analytical features were created to transform transactional order-level data into customer-level datasets suitable for churn and retention analysis.
+
+## Customer Churn Table (customer_churn_new)
+
+### Customer Tenure
+
+Calculated the number of days between the customer's first purchase and the maximum order date available in the dataset.
+
+Purpose:
+
+* Measure customer lifecycle length
+* Segment customers by tenure
+
+### Inactive Days
+
+Calculated the number of days between the customer's most recent order and the maximum order date in the dataset.
+
+Purpose:
+
+* Measure customer inactivity
+* Support churn classification
+
+### Churn Flag
+
+Customers with inactive_days > 180 were classified as churned.
+
+Values:
+
+* 1 = Churned
+* 0 = Active
+
+Purpose:
+
+* Primary retention metric used throughout the analysis
+
+### Churn Status
+
+Business-friendly label derived from churn_flag.
+
+Values:
+
+* Churned
+* Active
+
+### Customer Type
+
+Classified customers based on purchase frequency.
+
+Values:
+
+* One-Time Customer
+* Repeat Customer
+
+Purpose:
+
+* Compare retention patterns between customer segments
+
+### Revenue Bucket
+
+Customers segmented according to total lifetime revenue.
+
+Buckets:
+
+* 0-100
+* 101-299
+* 301-499
+* 501-1000
+* 1000+
+
+Purpose:
+
+* Analyze churn across customer value segments
+
+### Revenue Bucket Sort
+
+Custom sort column created to maintain logical bucket ordering in Power BI visuals.
+
+### Tenure Bucket
+
+Customers segmented according to tenure duration.
+
+Buckets:
+
+* 0-89
+* 91-119
+* 121-179
+* 181-364
+* 365+
+
+Purpose:
+
+* Evaluate churn behavior across lifecycle stages
+
+### Tenure Bucket Sort
+
+Custom sort column created to maintain proper tenure bucket ordering.
+
+### Order Frequency Bucket
+
+Customer segmentation based on total number of orders.
+
+Purpose:
+
+* Compare churn across purchasing frequency groups
+
+---
+
+## Customer Experience Table (customer_experience)
+
+### Delivery Days
+
+Calculated as:
+
+Delivery Date - Purchase Date
+
+Purpose:
+
+* Measure overall delivery performance
+
+### Late Delivery Flag
+
+Values:
+
+* 1 = Delivered after estimated delivery date
+* 0 = Delivered on or before estimated delivery date
+
+Purpose:
+
+* Measure delivery reliability
+
+### Processing Days
+
+Calculated as:
+
+Order Approved Date - Purchase Date
+
+Purpose:
+
+* Measure seller processing performance
+
+### Processing Days Bucket
+
+Buckets:
+
+* 0-2 days
+* 3-5 days
+* 6-8 days
+* 9-12 days
+* 12+ days
+
+Purpose:
+
+* Analyze customer experience by processing efficiency
+
+### Processing Bucket Sort
+
+Custom sort column created to maintain logical bucket ordering.
+
+---
+
+## Customer First Experience Table (customer_first_experience)
+
+### First Delivery Days
+
+Delivery duration associated with a customer's first completed order.
+
+Purpose:
+
+* Evaluate first-order fulfillment experience
+
+### First Late Delivery Flag
+
+Values:
+
+* 1 = First order delivered late
+* 0 = First order delivered on time
+
+Purpose:
+
+* Assess relationship between first-order delivery performance and future churn
+
+### First Review Score
+
+Customer review score associated with the first completed order.
+
+Purpose:
+
+* Evaluate relationship between initial satisfaction and retention

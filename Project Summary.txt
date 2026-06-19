@@ -1,0 +1,44 @@
+# Project Summary
+
+## Customer Churn & Retention Analysis – Olist E-Commerce Marketplace
+
+This project analyzes customer churn and retention within the Brazilian Olist E-Commerce Marketplace using SQL and Power BI. The objective was to identify customer retention patterns, quantify revenue at risk, and evaluate how customer experience and operational performance influence customer attrition.
+
+The project began with data cleaning and validation across multiple transactional datasets, including customers, orders, products, payments, reviews, sellers, and geolocation data. Data quality checks were performed to investigate missing values, duplicate records, timestamp anomalies, product category inconsistencies, and referential integrity issues.
+
+To support customer-level analysis, custom analytical tables were engineered using SQL. These tables included customer lifecycle metrics, churn classifications, customer experience indicators, and first-order experience metrics. Customers were classified as churned if they remained inactive for more than 180 days relative to the latest order date available in the dataset.
+
+The analysis focused on customer retention, revenue contribution, customer satisfaction, delivery performance, seller processing efficiency, and first-order customer experiences. Additional segmentation was performed using customer tenure, revenue contribution, purchase frequency, and customer type classifications.
+
+Key findings revealed that approximately 70.8% of customers were classified as churned, while only 3% became repeat customers. Churned customers accounted for more than 70% of total revenue, highlighting a significant retention challenge. The analysis also showed that churned customers experienced longer delivery times, higher late-delivery rates, and lower review scores compared to active customers. First-order experience analysis further indicated that customers who eventually churned often received slower deliveries and reported lower satisfaction during their first purchase.
+
+The final solution includes SQL-based data preparation, feature engineering, customer-level analytical datasets, and a three-page interactive Power BI dashboard designed to support retention analysis, customer experience monitoring, and operational decision-making.
+
+### Tools Used
+
+* SQL (MySQL)
+* Power BI
+* DAX
+* Power Query
+* Data Modeling
+* Business Analysis
+
+### Skills Demonstrated
+
+* Data Cleaning & Validation
+* Feature Engineering
+* Customer Analytics
+* Churn Analysis
+* Retention Analysis
+* Revenue Analysis
+* Data Modeling
+* Dashboard Development
+* Business Intelligence
+* Data Storytelling
+
+## Power BI Dashboard
+
+Due to GitHub file size limitations, the Power BI dashboard file is available below:
+
+**PBIX Download:**  
+https://drive.google.com/file/d/1ch38h4d-50v4yjZlgUWpDFMSpodkNYAu/view?usp=drive_link
