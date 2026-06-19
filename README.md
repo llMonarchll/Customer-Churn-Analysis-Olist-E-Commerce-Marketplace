@@ -485,11 +485,16 @@ Customer-Churn-Retention-Analysis/
 │
 ├── SQL/
 │   ├── import_queries.sql
-│   ├── Data_Cleaning.sql
-│   └── eda_analysis_queries.sql
+│   ├── data_cleaning_queries.sql
+│   └── eda-analysis_queries.sql
 │
 ├── PowerBI/
 │   └── Customer_Churn_Dashboard.pbix
+│
+├── Documentation/
+│   ├── Project_Summary.pdf
+│   ├── Data_leaning_Documentation.pdf
+│   └── Feature_Engineering_Documentation.pdf
 │
 ├── Images/
 │   ├── Data_Model.png
