@@ -303,6 +303,7 @@ The project follows a hybrid star-schema style analytical model combining transa
 
 The model supports customer-level, order-level, operational, and retention-focused analysis.
 
+![Executive Dashboard](Images/data_model.png)
 ---
 
 # Dashboard Overview
@@ -323,7 +324,7 @@ Provide an executive-level view of customer churn, revenue risk, customer compos
 * Average Delivery Days by Churn Status
 * Customer Distribution by Tenure Bucket
 
-![Executive Dashboard](Images/Dashboard_Page_1.png)
+![Executive Dashboard](Images/dashboard_Page_1.png)
 ---
 
 ## Page 2 – Processing Time vs Customer Experience
@@ -340,7 +341,7 @@ Evaluate how seller processing performance influences customer experience and re
 * Delivery Time by Processing Time Bucket
 * Late Delivery Rate by Processing Time Bucket
 
-![Executive Dashboard](Images/Dashboard_Page_2.png)
+![Executive Dashboard](Images/dashboard_Page_2.png)
 ---
 
 ## Page 3 – Revenue Segmentation & First-Order Experience
@@ -359,7 +360,7 @@ Analyze customer value distribution and evaluate whether first-order experiences
 * First-Order Late Delivery Rate
 * First-Order Review Score
 
-![Executive Dashboard](Images/Dashboard_Page_3.png)
+![Executive Dashboard](Images/dashboard_Page_3.png)
 ---
 
 # Key Findings
