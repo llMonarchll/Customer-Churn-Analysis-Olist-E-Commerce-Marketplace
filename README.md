@@ -476,11 +476,6 @@ Customer-Churn-Retention-Analysis/
 ├── PowerBI/
 │   └── Customer_Churn_Dashboard.pbix
 │
-├── Documentation/
-│   ├── Executive_Summary.pdf
-│   ├── Data_Cleaning_Validation_Documentation.pdf
-│   └── Feature_Engineering_Documentation.pdf
-│
 ├── Images/
 │   ├── Data_Model.png
 │   ├── Dashboard_Page_1.png
