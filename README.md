@@ -466,30 +466,25 @@ This suggests that first-order experience may influence long-term retention outc
 # Repository Structure
 
 Customer-Churn-Retention-Analysis/
-
 ├── SQL/
 │ ├── Data_Cleaning.sql
-│ ├── Feature_Engineering.sql
+│ ├── eda_data-analysis_queries.sql
 │ └── Customer_Churn_Analysis.sql
 │
-
 ├── PowerBI/
 │ └── Customer_Churn_Dashboard.pbix
 │
-
 ├── Documentation/
 │ ├── Executive_Summary.pdf
 │ ├── Data_Cleaning_Validation_Documentation.pdf
 │ └── Feature_Engineering_Documentation.pdf
 │
-
 ├── Images/
 │ ├── Data_Model.png
 │ ├── Dashboard_Page_1.png
 │ ├── Dashboard_Page_2.png
 │ └── Dashboard_Page_3.png
 │
-
 └── README.md
 
 ```
