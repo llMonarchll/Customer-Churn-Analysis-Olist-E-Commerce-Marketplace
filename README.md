@@ -363,6 +363,14 @@ Analyze customer value distribution and evaluate whether first-order experiences
 ![Executive Dashboard](Images/dashboard_Page_3.png)
 ---
 
+## Power BI Dashboard
+
+Due to GitHub file size limitations, the Power BI dashboard file is available below:
+
+**PBIX Download:**  
+https://drive.google.com/file/d/1ch38h4d-50v4yjZlgUWpDFMSpodkNYAu/view?usp=drive_link
+
+
 # Key Findings
 
 ## Customer Retention
@@ -443,6 +451,13 @@ This suggests that first-order experience may influence long-term retention outc
 * Interactive Reporting
 * KPI Design
 * Visual Storytelling
+
+## Power BI Dashboard
+
+Due to GitHub file size limitations, the Power BI dashboard file is available below:
+
+**PBIX Download:**  
+(https://drive.google.com/file/d/1ch38h4d-50v4yjZlgUWpDFMSpodkNYAu/view?usp=drive_link)
 
 ## DAX
 
